@@ -1,0 +1,45 @@
+//BACKGROUNDS
+@each $class in $accent-classes {
+	$i: index($accent-classes, $class);
+	$color: nth($accent-define, $i);
+	.#{$class}-bg{
+		background-color: $color;
+	}
+	@each $value in $opacity-values {
+		$j: index($opacity-values, $value);
+		$opacity: nth($opacity-define, $j);
+		.#{$class}-bg-#{$value}{
+			background-color: rgba($color, $opacity);
+		}
+	}
+}
+//BORDERS
+@each $class in $accent-classes {
+	$i: index($accent-classes, $class);
+	$color: nth($accent-define, $i);
+	.#{$class}-border{
+		border: $border-size solid $color;
+	}
+	@each $value in $opacity-values {
+		$j: index($opacity-values, $value);
+		$opacity: nth($opacity-define, $j);
+		.#{$class}-border-#{$value}{
+			border: $border-size solid rgba($color, $opacity);
+		}
+	}
+}
+//TEXT
+@each $class in $accent-classes {
+	$i: index($accent-classes, $class);
+	$color: nth($accent-define, $i);
+	.#{$class}-text{
+		color: $color;
+	}
+	@each $value in $opacity-values {
+		$j: index($opacity-values, $value);
+		$opacity: nth($opacity-define, $j);
+		.#{$class}-text-#{$value}{
+			color: rgba($color, $opacity);
+		}
+	}
+}

@@ -1,0 +1,6 @@
+= simple_form_for(@box, :html => {'data-abide' => ''}) do |f|
+  .form-inputs
+    = f.input :title, input_html: { required: ''}, hint: 'Cannot be blank.'
+    = f.input :body, input_html: { required: ''}, hint: 'Cannot be blank.'
+  .form-actions
+    = f.button :submit
