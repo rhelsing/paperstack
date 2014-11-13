@@ -1,3 +1,16 @@
 #paperstack
 
 Used for development of staple gem.
+
+* REPLACE IN application.js:
+	$(function(){ $(document).foundation(); });
+* with:
+var ready = function() {
+  $(document).foundation();
+  $(document).foundation('abide', {
+    init: false,  // not working without
+  });
+}
+
+$(ready);
+$(document).on('page:load', ready);
