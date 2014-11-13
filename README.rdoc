@@ -17,7 +17,7 @@ $(document).on('page:load', ready);
 
 * place typography
 
-* better default form
+* better default form from overrides and form
 
 * Tables(Expand guihub) and Spacing Next
 

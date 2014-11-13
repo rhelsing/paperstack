@@ -571,7 +571,7 @@ $button-group-border-width: 1px;
 $form-spacing: rem-calc($scale-factor*16);
 
 // We use these to style the labels in different ways
-$form-label-pointer: pointer;
+$form-label-pointer: default;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $font-weight-normal;
 $form-label-line-height: 1.5;
