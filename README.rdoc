@@ -1,0 +1,3 @@
+#paperstack
+
+Used for development of staple gem.
