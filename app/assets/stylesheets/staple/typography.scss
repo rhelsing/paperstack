@@ -1,7 +1,12 @@
-//IMPORT FONTS HERE
-$typeface-primary:"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-$typeface-secondary:Georgia, Cambria, "Times New Roman", Times, serif;
-$typeface-tertiary:Consolas, "Liberation Mono", Courier, monospace;
+//IMPORT FONTS HERE Typekit vs google fonts
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(http://fonts.googleapis.com/css?family=Chivo);
+@import url(http://fonts.googleapis.com/css?family=VT323);
+
+//DEFAULTS
+$typeface-primary:'Chivo',"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$typeface-secondary:'Slabo 27px', Georgia, Cambria, "Times New Roman", Times, serif;
+$typeface-tertiary:'VT323',Consolas, "Liberation Mono", Courier, monospace;
 $normal-font-weight: 400;
 
 //NOT HOOKED UP YET:
@@ -35,3 +40,5 @@ $spacing-classes: sleak wide;
 $spacing-define: 0.2rem 1rem;
 
 @import "builders/build_typography"
+
+//TODO: COOL FONT SHADOW EFFECT ON http://fittextjs.com
