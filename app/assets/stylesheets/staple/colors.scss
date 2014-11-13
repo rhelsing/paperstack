@@ -17,8 +17,8 @@ $button-define: 		$primary-color 	$complement-color	$secondary-color 	$tertiary-
 //ACCENTS CLASSES TO GENERATE: (BACKGROUNDS, BORDERS, AND TEXT-COLOR)
 $white: #ffffff;
 $black: #000000;
-$accent-classes: 	white 	black;
-$accent-define: 	$white 	$black;
+$accent-classes: 	white 	black  tert;
+$accent-define: 	$white 	$black  $tertiary-color;
 
 //OPACITY CLASSES TO GENERATE: (% OPACITY OF ACCENT CLASSES)
 $transparent-strong:0.8;

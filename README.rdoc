@@ -14,3 +14,7 @@ var ready = function() {
 
 $(ready);
 $(document).on('page:load', ready);
+
+
+* Specify default in main class
+* Specify additional to genrate that can be chained
