@@ -15,6 +15,12 @@ var ready = function() {
 $(ready);
 $(document).on('page:load', ready);
 
+* place typography
+
+* better default form
+
+* Tables(Expand guihub) and Spacing Next
+
 
 * Specify default in main class
 * Specify additional to genrate that can be chained
