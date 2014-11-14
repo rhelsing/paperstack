@@ -7,11 +7,11 @@ $border-size: 1px;//check if already exists
 
 
 //SPECIFY ADDITIONAL CLASSES TO GENERATE
-$padding-classes: pad1 pad2 pad3;
-$padding-define: 1rem 2rem 3rem;
+$padding-classes: 	pad1 	pad2 	pad3;
+$padding-define: 	1rem 	2rem 	3rem;
 
-$margin-classes: margin1 margin2 margin3;
-$margin-define: 1rem 2rem 3rem;
+$margin-classes: 	margin1 	margin2 	margin3;
+$margin-define: 	1rem 		2rem 		3rem;
 
 //UNCOMMENT FOR SPECIFIC SIDE CLASSES (MUST ALSO UNCOMMENT IN BUILD SIZES FILE)
 // $margin-left-classes:;
