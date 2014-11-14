@@ -17,10 +17,10 @@
 //= require_tree .
 
 var ready = function() {
-  $(document).foundation();
-  $(document).foundation('abide', {
-    init: false,  // not working without
-  });
+$(document).foundation();
+$(document).foundation('abide', {
+init: false,
+});
 }
 
 $(ready);
