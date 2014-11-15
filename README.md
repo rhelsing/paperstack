@@ -2,8 +2,7 @@
 
 Used for development of staple gem.
 
-* Transfer sizing generators
-* incorporate sizing into everything. Different levels of sizing?
+* add header weight / open sans / override
 * remove app.erb layout
 
 #Main
