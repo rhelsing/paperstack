@@ -2,8 +2,7 @@
 
 Used for development of staple gem.
 
-* add header weight / open sans / override
-* remove app.erb layout
+* default-border-size color builder
 
 #Main
 * Overrides

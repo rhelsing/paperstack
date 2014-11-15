@@ -1,24 +1,15 @@
-//IMPORT FONTS HERE Typekit vs google fonts
+//IMPORT FONTS HERE Typekit and Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
-// @font-face {
-// font-family: GraublauWeb;
-// src: url("path-to-the-font-file/GraublauWeb.otf") format("opentype");
-// }
 
 //DEFAULTS
 $typeface-primary: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $typeface-secondary: "Roboto Slab", serif;
 $typeface-tertiary: "Inconsolata", monospace;
-$normal-font-weight: 400;//doesn't target headers?
+$normal-font-weight: 400;
 $header-font-weight: 300;
 $subheader-font-weight: 400;
-
-//NOT HOOKED UP YET:
-$default-font-size: 16px;
-$default-line-height: 150%;
-$default-letter-spacing: 0.005rem;
 
 //FOUNDATION STYLES: CAN BE OVERRIDDEN BUT NEEDED
 $font-family-sans-serif: $typeface-primary;
@@ -35,7 +26,7 @@ $typeface-define: $typeface-primary $typeface-secondary $typeface-tertiary;
 
 //WEIGHT CLASSES IN ADDITION TO DEFAULT
 $weight-classes:light strong;
-$weight-define: 300 700;
+$weight-define: 200 700;
 
 //TEXT Transform: Underline, uppercase, etc text-transform: uppercase, lowercase, capitalize;
 $transform-classes: up down cap;//shorter names for simplicity when chaining
