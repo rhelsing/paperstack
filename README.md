@@ -5,10 +5,9 @@ Used for development of staple gem.
 * default-border-size color builder
 
 #Main
-* Overrides
-* Default Styles
-* Additional Styles
-* Generate
+* component generators
+* High level generators that call low level for component themes
+* Global generators that call high level for all components for a theme
 
 #Import
 * Override defaults

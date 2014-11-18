@@ -1,11 +1,14 @@
 //SET DEFAULT BUTTON STYLE with variables. Modify variables with thor/generators
 //DEFAULT
-.button{
+.button, input[type="submit"]{
 	background-color: $primary-color;
 	color: set-text-color($primary-color);
 	font-weight: 200;
  	letter-spacing: 1px;
  	transition: background-color 150ms ease-out;
+ 	//DO NOT MODIFY THIS (Needed for import to work) :%>>
+border-radius: $global-radius;
+
 }
 .button:hover{
 	background-color: lighten($primary-color, $transition-brighten);

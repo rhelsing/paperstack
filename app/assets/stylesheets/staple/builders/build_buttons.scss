@@ -13,6 +13,10 @@
 	.button.#{$color}{
 		background-color: $temp-color;
 		color: set-text-color($temp-color);
+		//DO NOT MODIFY THIS (Needed for import to work) :%>>
+border-radius: $global-radius;
+
+
 	}
 	.button.#{$color}:hover{
 		background-color: lighten($temp-color, $transition-brighten);
