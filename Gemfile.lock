@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/rhelsing/staple.git
-  revision: 3b908165c9db3a5e9c03e649eeac414e2a318264
+  revision: 65cf61c5b0eec4db16dcc74468d9acf720d1f1fa
   specs:
-    staple (0.1.7)
+    staple (0.4.2)
       font-awesome-rails (~> 4.2)
       foundation-rails (~> 5.4)
       simple_form (~> 3.0)
@@ -55,7 +55,7 @@ GEM
       sass (>= 3.2.0)
     hike (1.2.3)
     i18n (0.6.11)
-    jbuilder (2.2.4)
+    jbuilder (2.2.5)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.2)

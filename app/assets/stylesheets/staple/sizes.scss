@@ -1,7 +1,7 @@
 //APPLIES TO EVERYTHING:
-$rem-base: 16px;//bigger is smaller, like dpi
+$rem-base: 16px;
 $base-font-size: 100%;
-$base-line-height: 150%;//only affects some
+$base-line-height: 150%;
 
 $default-border-size: 1px;
 
@@ -31,6 +31,7 @@ $margin-define: 	1rem 		2rem;
 // $padding-right-define: ;
 // $padding-top-classes;
 // $padding-top-define: ;
+
 
 //GENERATE
 @import 'builders/build_sizes';

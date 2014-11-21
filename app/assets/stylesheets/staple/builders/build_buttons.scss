@@ -1,4 +1,4 @@
-//load functions before calling them. put in helpers
+//move to helpers
 @function set-text-color($color) {
   @if (lightness($color) > 60%) {
     @return rgba($black, $transparent-weak); // Lighter backgorund, return dark color
@@ -7,21 +7,14 @@
   }
 }
 //BUTTON GENERATOR FOR EACH COLOR
-@each $color in $button-classes {
-	$i: index($button-classes, $color);
-	$temp-color: nth($button-define, $i);
-	.button.#{$color}{
-		background-color: $temp-color;
-		color: set-text-color($temp-color);
-		//DO NOT MODIFY THIS (Needed for import to work) :%>>
-border-radius: $global-radius;
-
-
+@each $class in $button-classes {
+	$i: index($button-classes, $class);
+	$primary-color: nth($button-define, $i);
+	.button.#{$class}{
+		background-color: $primary-color;
+		color: set-text-color($primary-color);//&*default
 	}
-	.button.#{$color}:hover{
-		background-color: lighten($temp-color, $transition-brighten);
-	}
+	.button.#{$class}:hover{
+		background-color: lighten($primary-color, $transition-brighten);//&*hover
+	}//&*append
 }
-
-//MODIFY DEFAULT STYLE
-//APPEND ADDITIONAL GENERATORS WITH COMMANDS AS NEEDED
