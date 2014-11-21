@@ -1,12 +1,19 @@
-//IMPORT FONTS HERE Typekit and Google Fonts
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Inconsolata);//&*import
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);//&*import
 
 //DEFAULTS
-$typeface-primary: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$typeface-secondary: "Roboto Slab", serif;
-$typeface-tertiary: "Inconsolata", monospace;
+$typeface-primary: "Lato", sans-serif;
+$typeface-secondary: "Inconsolata", monospace;
+$typeface-tertiary: "Roboto Slab", serif;
 $normal-font-weight: 400;
 $header-font-weight: 300;
 $subheader-font-weight: 400;
@@ -16,8 +23,6 @@ $subheader-font-weight: 400;
 $font-family-sans-serif: $typeface-primary;
 $font-family-serif: $typeface-secondary;
 $font-family-monospace: $typeface-tertiary;
-$body-bg: $white;//can use any from colors
-$body-font-color: rgba($black, $transparent-strong);
 $body-font-family: $font-family-sans-serif;
 $body-font-weight: $normal-font-weight;
 

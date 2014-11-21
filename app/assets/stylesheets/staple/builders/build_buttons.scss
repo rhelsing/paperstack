@@ -12,7 +12,13 @@
 	$primary-color: nth($button-define, $i);
 	.button.#{$class}{
 		background-color: $primary-color;
-		color: set-text-color($primary-color);//&*default
+		color: set-text-color($primary-color);
+		border: 1px solid darken($primary-color, 6%);
+		border-bottom: 4px solid darken($primary-color, 6%);//big border bottom
+		box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
+-moz-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
+-webkit-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
+		border-radius: $global-radius;//&*default
 	}
 	.button.#{$class}:hover{
 		background-color: lighten($primary-color, $transition-brighten);//&*hover

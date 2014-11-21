@@ -1,7 +1,7 @@
-$primary-color: #3389dd;
-$complement-color: adjust_hue($primary-color, 180);
-$secondary-color: adjust_hue($primary-color, 135);
-$tertiary-color: adjust_hue($primary-color, 200);
+$primary-color: #42826C;
+$complement-color: #A5C77F;
+$secondary-color: #FFC861;
+$tertiary-color: #C84663;
 //&*append
 
 //AUTO GENERATE FOUNDATION COLORS: (CAN OVERRIDE)
@@ -29,7 +29,9 @@ $opacity-define:$transparent-light 	$transparent-weak 	$transparent-medium 	$tra
 $primary-difference: 30;
 $transition-brighten: 8%;
 
-$topbar-bg-color: $primary-color;
+//TOPBAR COLORS
+$topbar-bg-color: transparent;
 $topbar-text-color: rgba($white, $transparent-strong);
 
-//PUT BUILDER HERE?
+$body-bg: #002F32;
+$body-font-color: rgba($white, $transparent-medium);

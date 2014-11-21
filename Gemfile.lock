@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rhelsing/staple.git
-  revision: 65cf61c5b0eec4db16dcc74468d9acf720d1f1fa
+  revision: 235e7d47c8aa6d9a97f9ed916b4da6bb45a1da88
   specs:
     staple (0.4.2)
       font-awesome-rails (~> 4.2)
