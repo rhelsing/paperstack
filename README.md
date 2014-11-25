@@ -2,16 +2,9 @@
 
 Used for development of staple gem.
 
-* default-border-size color builder
-
-#Main
-* component generators
-* High level generators that call low level for component themes
-* Global generators that call high level for all components for a theme
-
-#Import
-* Override defaults
-* Add additional
-	* Styles
-	* Type of generators
-* Components - inherit default styles
+* Images
+ 	* background: effects: gradient, blur, black and white, opacity, darken for text
+ 		* images, styles combinatorial gen.
+ 		* Thumbnail styles. border, shadow, left align etc, caption
+ 		* seperate into component. default background + modifiers/ default images + modifiers
+ * Heading font can be different
