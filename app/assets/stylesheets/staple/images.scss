@@ -1,0 +1,13 @@
+//DEFAULT
+img{
+	//&*default
+}
+img:hover{
+	//&*hover
+}//&*append
+
+//BACKGROUND IMAGE CLASSES TO GENERATE
+$image-background-classes: coffee 		windmill;
+$image-background-define:  coffee.jpg 	windmill.jpg;
+
+@import 'builders/build_images'
