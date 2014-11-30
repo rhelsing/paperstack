@@ -1,13 +1,29 @@
 //DEFAULT
 img{
 	//&*default
+	-webkit-transition: all 0.4s ease;
+	 -moz-transition: all 0.4s ease;
+	   -o-transition: all 0.4s ease;
+	  -ms-transition: all 0.4s ease;
+	      transition: all 0.4s ease;
 }
 img:hover{
-	//&*hover
+	//bw
+	-webkit-filter: grayscale(100%);
+
+	//blur
+	//-webkit-filter: blur(5px);//&*hover
+
+	//tilt
+	// -webkit-transform: rotate(-10deg);
+ //     -moz-transform: rotate(-10deg);
+ //       -o-transform: rotate(-10deg);
+ //      -ms-transform: rotate(-10deg);
+ //          transform: rotate(-10deg);
 }//&*append
 
 //BACKGROUND IMAGE CLASSES TO GENERATE
-$image-background-classes: coffee 		windmill;
-$image-background-define:  coffee.jpg 	windmill.jpg;
+$background-image-classes: coffee 		windmill;
+$background-image-define:  'coffee.jpg' 'windmill.jpg';
 
 @import 'builders/build_images'

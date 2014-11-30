@@ -1,7 +1,7 @@
-$primary-color: #105B63;
-$complement-color: #FFD34E;
-$secondary-color: #DB9E36;
-$tertiary-color: #BD4932;
+$primary-color: #3389dd;
+$complement-color: adjust_hue($primary-color, 180);
+$secondary-color: adjust_hue($primary-color, 135);
+$tertiary-color: adjust_hue($primary-color, 200);
 //&*append
 
 //AUTO GENERATE FOUNDATION COLORS: (CAN OVERRIDE)
@@ -30,8 +30,8 @@ $primary-difference: 30;
 $transition-brighten: 8%;
 
 //TOPBAR COLORS
-$topbar-bg-color: transparent;
-$topbar-text-color: rgba($black, $transparent-strong);
+$topbar-bg-color: $primary-color;
+$topbar-text-color: $white;
 
-$body-bg: #FFFAD5;
-$body-font-color: rgba($black, $transparent-medium);
+$body-bg: $white;
+$body-font-color: rgba($black, $transparent-strong);

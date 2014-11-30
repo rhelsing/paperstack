@@ -8,3 +8,9 @@ Used for development of staple gem.
  		* Thumbnail styles. border, shadow, left align etc, caption
  		* seperate into component. default background + modifiers/ default images + modifiers
  * Heading font can be different
+
+
+ * Creat image and builder
+ * import in after
+
+ * fix hover speed

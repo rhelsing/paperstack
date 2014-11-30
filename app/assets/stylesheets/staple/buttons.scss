@@ -5,13 +5,7 @@
 	font-weight: 200;
  	letter-spacing: 1px;
  	margin-right: 5px;
- 	transition: background-color 150ms ease-out;
-	border: 1px solid darken($primary-color, 6%);
-	border-bottom: 4px solid darken($primary-color, 6%);//big border bottom
-	box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
--moz-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
--webkit-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
-	border-radius: $global-radius;//&*default
+ 	transition: background-color 150ms ease-out;//&*default
 }
 .button:hover{
 	background-color: lighten($primary-color, $transition-brighten);//&*hover

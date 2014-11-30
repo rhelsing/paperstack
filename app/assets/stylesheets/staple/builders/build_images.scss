@@ -1,26 +1,15 @@
-// //move to helpers
-// @function set-text-color($color) {
-//   @if (lightness($color) > 60%) {
-//     @return rgba($black, $transparent-weak); // Lighter backgorund, return dark color
-//   } @else {
-//     @return rgba($white, $transparent-strong); // Darker background, return light color
-//   }
-// }
-// //BUTTON GENERATOR FOR EACH COLOR
-// @each $class in $button-classes {
-// 	$i: index($button-classes, $class);
-// 	$primary-color: nth($button-define, $i);
-// 	.button.#{$class}{
-// 		background-color: $primary-color;
-// 		color: set-text-color($primary-color);
-// 		border: 1px solid darken($primary-color, 6%);
-// 		border-bottom: 4px solid darken($primary-color, 6%);//big border bottom
-// 		box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
-// -moz-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
-// -webkit-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
-// 		border-radius: $global-radius;//&*default
-// 	}
-// 	.button.#{$class}:hover{
-// 		background-color: lighten($primary-color, $transition-brighten);//&*hover
-// 	}//&*append
-// }
+@each $class in $background-image-classes {
+	$i: index($background-image-classes, $class);
+	$image: nth($background-image-define, $i);
+
+	.#{$class}{
+		background: url("#{$image}") no-repeat center center;
+		// background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 59%, rgba(0,0,0,0.65) 100%), url("#{$image}") no-repeat center center;
+		// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(59%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))), url("#{$image}") no-repeat center center;
+		// background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url("#{$image}") no-repeat center center;
+		// background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url("#{$image}") no-repeat center center;
+		// background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url("#{$image}") no-repeat center center;
+		// background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url("#{$image}") no-repeat center center;
+		background-size: cover;
+	}
+}
