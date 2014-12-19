@@ -1,7 +1,7 @@
-$primary-color: #3389dd;
-$complement-color: adjust_hue($primary-color, 180);
-$secondary-color: adjust_hue($primary-color, 135);
-$tertiary-color: adjust_hue($primary-color, 200);
+$primary-color: #01B0F0;
+$complement-color: #FF358B;
+$secondary-color: #AEEE00;
+$tertiary-color: #f39c12;
 //&*append
 
 //AUTO GENERATE FOUNDATION COLORS: (CAN OVERRIDE)
@@ -12,8 +12,8 @@ $warning-color: warning($primary-color);//yellow/orange
 $info-color: info($primary-color);//blue
 
 //ACCENTS CLASSES TO GENERATE: (BACKGROUNDS, BORDERS, AND TEXT-COLOR)
-$white: #ffffff;
-$black: #000000;
+$white: #000;
+$black: #FFF;
 $accent-classes: 	white 	black;
 $accent-define: 	$white 	$black;
 
@@ -30,8 +30,8 @@ $primary-difference: 30;
 $transition-brighten: 8%;
 
 //TOPBAR COLORS
-$topbar-bg-color: $primary-color;
-$topbar-text-color: $white;
+$topbar-bg-color: transparent;
+$topbar-text-color: rgba($white, $transparent-strong);
 
-$body-bg: $white;
-$body-font-color: rgba($black, $transparent-strong);
+$body-bg: #333333;
+$body-font-color: rgba($black, $transparent-medium);

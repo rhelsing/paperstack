@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'kmc/index'
+
+  get 'kmc/dashboard'
+
+  get 'kmc/email'
+
+  get 'kmc/intro'
+
+  get 'kmc/options'
+
+  get 'kmc/confirmation'
+
   get 'home/index'
 
   get 'home/dashboard'

@@ -5,7 +5,17 @@ table{
 	//FIX SPACING
 	-webkit-border-horizontal-spacing: 0px;
 	-webkit-border-vertical-spacing: 0px;
-	//&*default
+	
+	tbody tr:hover{
+	background-color: rgba($black, 0.07);
+}
+	td, th{
+	padding: 8px;
+	border-bottom: 1px solid rgba($black, 0.1);
+}
+	tr:nth-child(even) {
+   background-color: rgba($black, 0.03);
+}//&*default
 }
 
 //BUILDERS
