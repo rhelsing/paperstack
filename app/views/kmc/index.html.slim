@@ -1,2 +1,67 @@
-h1 Kmc#index
-p Find me in app/views/kmc/index.html.slim
+.row#navigation
+	nav.top-bar data-topbar="" role="navigation"
+	  ul.title-area
+	    li.name
+	      h1
+	        a href="#"  keepmycoverage
+	    li.toggle-topbar.menu-icon
+	      a href="#"
+	        span
+	  div.top-bar-section
+	    ul
+	      li
+	        a href="#"  About
+	      li
+	        a href="#"  Demo
+	      li
+	        a href="#"  Contact Us
+	      li.right.has-form
+	      	a.button href="#" Log In
+.row#hero.text-center
+	h1 Product Retention Automation
+	h5 It's more efficient to keep an existing customer than to acquire a new one.
+	ul.small-block-grid-3
+	  li.text-center
+	    h1 #{fa_icon "cogs"}
+	    h2 Automate
+	    p Real time data inputs from employers and third party systems starts the process.
+	  li.text-center
+	    h1 #{fa_icon "envelope"}
+	    h2 Connect
+	    p Our system generates a campaign series using email, text or call center.
+	  li.text-center
+	    h1 #{fa_icon "check-circle-o"}
+	    h2 Retain
+	    p Realize meaningful revenue to your bottom line
+.row#demo.text-center
+	h2
+		a Try it now!
+.row#contact
+	h2.text-center #{fa_icon "paper-plane"} Contact Us
+	h4.text-center Please complete the form below.
+	= simple_form_for(:contact, :html => {'data-abide' => ''}) do |f|
+		.form-inputs
+		  = f.input :name, input_html: { required: ''}, hint: 'Cannot be blank.'
+		  = f.input :email, input_html: { required: ''}, hint: 'Cannot be blank.'
+		  = f.input :organization
+		  = f.input :message, :as => :text, input_html: { required: ''}, hint: 'Cannot be blank.'
+		.form-actions
+		  = f.button :submit
+.row#footer
+	ul.small-block-grid-3
+	  li
+	    h4 Content
+	    a Process <br>
+	    a Features <br>
+	    a Contact Us <br>
+	  li
+	    h4 Follow Us
+	    a Process <br>
+	    a Features <br>
+	    a Contact Us <br>
+	  li
+	    h4 Legal
+	    a Process <br>
+	    a Features <br>
+	    a Contact Us <br>
+	p.text-center © Copyright 2015 Centerian, LLC.<br> 427 Prince Ave. Suite 3A<br>Athens, Georgia 30601

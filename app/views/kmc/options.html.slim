@@ -1,2 +1,47 @@
-h1 Kmc#options
-p Find me in app/views/kmc/options.html.slim
+#header.white-bg
+  .row
+    h1.right keepmycoverage
+    h1 logo
+#container.pad2
+  #login.row.white-bg.pad2
+    .columns.small-7.medium-9
+      h1 You're almost done, Bobbie Jo!
+      p Please enter your payment information below.
+      h2 Current Benefit
+      = simple_form_for(:payment, :html => {'data-abide' => ''}) do |f|
+        .form-inputs
+          = f.input :product, :as => :boolean, :input_html => { :checked => true }
+          p PrivacyArmor is a complete, turnkey solution for identity protection. It includes proactive identity and credit monitoring, full-service remediation, a $25,000 fraud insurance policy, access to our interactive web application for threat assessment and alert management, plus helpful tools such as WalletArmor, a Digital Identity report, CreditArmor, and IdentityMD. Companies rely on PrivacyArmor to detect more fraud sooner so their focus can be on work – not identity theft.
+          h2 Select Your Payment Method
+          dl.tabs data-tab=""
+            dd
+              a href="#panel1"  Credit Card
+            dd
+              a href="#panel2"  Bank Account
+          .tabs-content
+            #panel1.content
+              = f.input :card_number, input_html: { required: ''}, hint: 'Cannot be blank.'
+              .row
+                .columns.small-4
+                  = f.input :month, input_html: { required: ''}, hint: 'Cannot be blank.'
+                .columns.small-4
+                  = f.input :year, input_html: { required: ''}, hint: 'Cannot be blank.'
+                .columns.small-4
+                  = f.input :cvv, input_html: { required: ''}, hint: 'Cannot be blank.'
+            #panel2.content
+              = f.input :account_type, input_html: { required: ''}, hint: 'Cannot be blank.'
+              = f.input :routing_number, input_html: { required: ''}, hint: 'Cannot be blank.'
+              = f.input :account_number, input_html: { required: ''}, hint: 'Cannot be blank.'
+              = f.input :account_number_confirm, input_html: { required: ''}, hint: 'Cannot be blank.'
+        .form-actions
+          = f.button :submit
+    .columns.small-5.medium-3
+      h3 Account Information
+      ul
+        li Bobbie Jo Snyder
+        li 1504 Wilmore Dr
+        li Toledo, OH 43614
+        li April 03, 1984
+        li 123-456-7890
+        li <a href="#">Edit this information</a>
+  p.text-center © Copyright 2014 Centerian, LLC.<br> support@keepmycoverage.com <br> 706.431.7090

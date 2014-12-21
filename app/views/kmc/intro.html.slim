@@ -1,2 +1,15 @@
-h1 Kmc#intro
-p Find me in app/views/kmc/intro.html.slim
+#header.white-bg
+  .row
+    h1.right keepmycoverage
+    h1 logo
+#container.pad2
+  h1.text-center Hello Darius! Want to keep your benefits?
+  p.text-center While you were employed with Centerian, you elected coverage for PrivacyArmor. Did you know that you are eligible to continue this coverage after your employment ends? <a href="#">Learn more</a> or begin the process below.
+  #login.white-bg.pad2
+    h1 Please verify your identity
+    = simple_form_for(:form, :html => {'data-abide' => ''}) do |f|
+      .form-inputs
+        = f.input :last_four_digits_of_your_ssn, input_html: { required: ''}, hint: 'Cannot be blank.'
+      .form-actions
+        = f.button :submit
+  p.text-center © Copyright 2014 Centerian, LLC.<br> support@keepmycoverage.com <br> 706.431.7090

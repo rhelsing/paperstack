@@ -1,16 +1,11 @@
 //DEFAULT
-img{
-	border-radius: 2px;
-	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
--moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);//&*default
+img{//&*default
 }
-img:hover{
-	-webkit-filter: grayscale(100%);//&*hover
+img:hover{//&*hover
 }//&*append
 
 //BACKGROUND IMAGE CLASSES TO GENERATE
-$background-image-classes: coffee 		windmill;
-$background-image-define:  'coffee.jpg' 'windmill.jpg';
+$background-image-classes: coffee 		windmill          kmc;
+$background-image-define:  'coffee.jpg' 'windmill.jpg'  'bg1.jpg';
 
 @import 'builders/build_images'
