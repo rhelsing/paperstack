@@ -1,5 +1,6 @@
 //DEFAULT
 .button, input[type="submit"]{
+  outline:none;
 	background-color: $primary-color;
 	color: set-text-color($primary-color);
 	font-weight: 200;

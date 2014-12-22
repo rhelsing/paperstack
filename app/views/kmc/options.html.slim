@@ -13,11 +13,11 @@
           = f.input :product, :as => :boolean, :input_html => { :checked => true }
           p PrivacyArmor is a complete, turnkey solution for identity protection. It includes proactive identity and credit monitoring, full-service remediation, a $25,000 fraud insurance policy, access to our interactive web application for threat assessment and alert management, plus helpful tools such as WalletArmor, a Digital Identity report, CreditArmor, and IdentityMD. Companies rely on PrivacyArmor to detect more fraud sooner so their focus can be on work – not identity theft.
           h2 Select Your Payment Method
-          dl.tabs data-tab=""
-            dd
-              a href="#panel1"  Credit Card
-            dd
-              a href="#panel2"  Bank Account
+          ul.button-group.even-2 data-tab=""
+            li
+              a.button href="#panel2"  Bank Account
+            li
+              a.button href="#panel1"  Credit Card
           .tabs-content
             #panel1.content
               = f.input :card_number, input_html: { required: ''}, hint: 'Cannot be blank.'
