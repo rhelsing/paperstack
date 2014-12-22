@@ -1,15 +1,15 @@
 #header.white-bg
-  .row
-    h1.right keepmycoverage
-    h1 logo
-#container.pad2
-  h1.text-center Hello Darius! Want to keep your benefits?
-  p.text-center While you were employed with Centerian, you elected coverage for PrivacyArmor. Did you know that you are eligible to continue this coverage after your employment ends? <a href="#">Learn more</a> or begin the process below.
-  #login.white-bg.pad2
-    h1 Please verify your identity
+  .row.pad1
+    h1.right= image_tag("logo.png")
+    h1= image_tag("logo1.png")
+#container.row.pad2
+  h1.text-center.secondary.black-text-medium <strong>Hello Darius!</strong> Want to keep your benefits?
+  p.text-center.sleak.more-line.black-text-medium While you were employed with Centerian, you elected coverage for PrivacyArmor. Did you know that you are eligible to continue this coverage after your employment ends? <a href="#">Learn more</a> or begin the process below.
+  #box.login.white-bg.pad2
+    h6.strong.black-text-strong Please verify your identity
     = simple_form_for(:form, :html => {'data-abide' => ''}) do |f|
       .form-inputs
-        = f.input :last_four_digits_of_your_ssn, input_html: { required: ''}, hint: 'Cannot be blank.'
+        = f.input :verification, :as => :password, label: false, input_html: {:maxlength => 4, required: '', style: 'text-align:center;'}, hint: 'Cannot be blank.', placeholder: "Last four digits of SSN"
       .form-actions
-        = f.button :submit
-  p.text-center © Copyright 2014 Centerian, LLC.<br> support@keepmycoverage.com <br> 706.431.7090
+        = f.button :submit, "Continue"
+  h6.pad2.text-center.black-text-weak.sleak © Copyright 2015 Centerian, LLC.<br> support@keepmycoverage.com <br> 706.431.7090

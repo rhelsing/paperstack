@@ -1,10 +1,10 @@
 #header.white-bg
-  .row
-    h1.right keepmycoverage
-    h1 logo
+  .row.pad1
+    h1.right= image_tag("logo.png")
+    h1= image_tag("logo1.png")
 #container.pad2
-  #login.row.white-bg.pad2
-    .columns.small-7.medium-9
+  #box.row.white-bg.pad2
+    .columns.small-12.medium-9
       h1 You're almost done, Bobbie Jo!
       p Please enter your payment information below.
       h2 Current Benefit
@@ -13,29 +13,38 @@
           = f.input :product, :as => :boolean, :input_html => { :checked => true }
           p PrivacyArmor is a complete, turnkey solution for identity protection. It includes proactive identity and credit monitoring, full-service remediation, a $25,000 fraud insurance policy, access to our interactive web application for threat assessment and alert management, plus helpful tools such as WalletArmor, a Digital Identity report, CreditArmor, and IdentityMD. Companies rely on PrivacyArmor to detect more fraud sooner so their focus can be on work – not identity theft.
           h2 Select Your Payment Method
-          ul.button-group.even-2 data-tab=""
-            li
-              a.button href="#panel2"  Bank Account
-            li
-              a.button href="#panel1"  Credit Card
+          .row data-tab=""
+            .columns.small-6
+              a.button.expand href="#panel2" #{fa_icon "bank"}  Bank Account
+            .columns.small-6
+              a.button.expand href="#panel1" #{fa_icon "credit-card"}  Credit Card
+          / ul.button-group.even-2 data-tab=""
+          /   li
+          /     a.button href="#panel2" #{fa_icon "bank"}  Bank Account
+          /   li
+          /     a.button href="#panel1" #{fa_icon "credit-card"}  Credit Card
           .tabs-content
             #panel1.content
               = f.input :card_number, input_html: { required: ''}, hint: 'Cannot be blank.'
               .row
                 .columns.small-4
-                  = f.input :month, input_html: { required: ''}, hint: 'Cannot be blank.'
+                  = f.input :expiration_month, as: :date, order: [:month]
                 .columns.small-4
-                  = f.input :year, input_html: { required: ''}, hint: 'Cannot be blank.'
+                   = f.input :expiration_year, as: :date, start_year: Date.today.year, end_year: Date.today.year + 27, discard_day: true, order: [:year]
                 .columns.small-4
                   = f.input :cvv, input_html: { required: ''}, hint: 'Cannot be blank.'
+                .center-options
+                  .form-actions.clear
+                    = f.button :submit, "Submit Payment"
             #panel2.content
               = f.input :account_type, input_html: { required: ''}, hint: 'Cannot be blank.'
               = f.input :routing_number, input_html: { required: ''}, hint: 'Cannot be blank.'
               = f.input :account_number, input_html: { required: ''}, hint: 'Cannot be blank.'
               = f.input :account_number_confirm, input_html: { required: ''}, hint: 'Cannot be blank.'
-        .form-actions
-          = f.button :submit
-    .columns.small-5.medium-3
+              .center-options
+                .form-actions.clear
+                  = f.button :submit, "Submit Payment"
+    .columns.small-0.medium-3
       h3 Account Information
       ul
         li Bobbie Jo Snyder
@@ -44,4 +53,4 @@
         li April 03, 1984
         li 123-456-7890
         li <a href="#">Edit this information</a>
-  p.text-center © Copyright 2014 Centerian, LLC.<br> support@keepmycoverage.com <br> 706.431.7090
+  h6.pad2.text-center.black-text-weak.sleak © Copyright 2015 Centerian, LLC.<br> support@keepmycoverage.com <br> 706.431.7090

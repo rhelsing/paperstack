@@ -1,8 +1,10 @@
-//&*import
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);//&*import
 
 //DEFAULTS
-$typeface-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$typeface-secondary: serif;
+$typeface-primary: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$typeface-secondary: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $typeface-tertiary: monospace;
 $normal-font-weight: 400;
 $header-font-weight: 300;
@@ -30,7 +32,7 @@ $transform-define: uppercase lowercase capitalize;
 
 //Letter spacing varients
 $spacing-classes: sleak wide;
-$spacing-define: 0.2rem 1rem;
+$spacing-define: 0.05rem 1rem;
 
 @import "builders/build_typography"
 

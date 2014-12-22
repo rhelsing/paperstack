@@ -39,7 +39,7 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem 'slim-rails'
-gem 'foundation-rails'
+gem 'foundation-rails', '5.4.5.0'
 gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'staple', :git => 'git://github.com/rhelsing/staple.git'

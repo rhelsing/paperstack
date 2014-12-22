@@ -13,12 +13,21 @@
 	.button.#{$class}{
 		background-color: $primary-color;
 		color: set-text-color($primary-color);
-		border: 1px solid darken($primary-color, 6%);
-		border-bottom: 4px solid darken($primary-color, 6%);//big border bottom
-		box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
--moz-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
--webkit-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;//shiny
-		border-radius: $global-radius;//&*default
+		border-radius:3px;
+-webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.3), inset 0px 0px 3px 1px darken($primary-color, 2);
+-moz-box-shadow:    0px 1px 2px 0px rgba(50, 50, 50, 0.3), inset 0px 0px 3px 1px darken($primary-color, 2);
+box-shadow:         0px 1px 2px 0px rgba(50, 50, 50, 0.3), inset 0px 0px 3px 1px darken($primary-color, 2);
+background-color:$primary-color;
+border:1px solid darken($primary-color, 10);
+border-top: 2px solid lighten($primary-color, 2);
+border-bottom: 1px solid darken($primary-color, 4);
+text-shadow: 1px 1px  darken($primary-color, 5);
+color:#fff;
+font-weight: 600;
+font-size: 11px;
+letter-spacing: 1px;
+padding: 8px 30px 8px 30px;
+text-decoration:none;//&*default
 	}
 	.button.#{$class}:hover{
 		background-color: lighten($primary-color, $transition-brighten);//&*hover

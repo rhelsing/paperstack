@@ -1,0 +1,60 @@
+//try to eventually integrate these into framework
+
+#header{
+  border-bottom: 1px solid #cfcfcf;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50,50,50,0.05);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(50,50,50,0.05);
+  box-shadow: 0px 2px 5px 0px rgba(50,50,50,0.05);
+}
+
+#box{
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50,50,50,0.15);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(50,50,50,0.15);
+  box-shadow: 0px 2px 5px 0px rgba(50,50,50,0.15);
+  border: 1px solid #cfcfcf;
+  border-top: 3px solid #3389dd;
+  border-radius: 6px;
+  padding: 30px;
+  padding-bottom: 20px;
+}
+
+.login{
+  width: 300px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center-options{
+  text-align: center;
+}
+
+a{
+  text-decoration: underline;
+  transition: color 150ms ease-out;
+}
+
+.more-line{
+  line-height: 35px;
+}
+
+ul {
+    list-style-type: none;
+    padding:0; margin:0;
+}
+.clear{
+  clear:both;
+}
+html{
+  outline: none;
+}
+select{
+  background: #fff;
+  outline:none;
+}
+select:hover{
+  background: #fff;
+}
+div{
+  outline:none;
+}

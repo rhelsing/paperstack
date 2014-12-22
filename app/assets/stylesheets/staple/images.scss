@@ -5,7 +5,7 @@ img:hover{//&*hover
 }//&*append
 
 //BACKGROUND IMAGE CLASSES TO GENERATE
-$background-image-classes: coffee 		windmill          kmc;
-$background-image-define:  'coffee.jpg' 'windmill.jpg'  'bg1.jpg';
+$background-image-classes: coffee 		windmill kmc;
+$background-image-define:  'coffee.jpg' 'windmill.jpg' 'bg1.jpg';
 
 @import 'builders/build_images'
